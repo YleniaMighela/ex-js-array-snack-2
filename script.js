@@ -46,7 +46,12 @@ const books = [
 ];
 
 // Snack 1 - Filtra e Modifica
+
 // Crea una funzione che somma due numeri.
+const somma = (a, b) => a + b;
+console.log(somma(7, 8));
+
+
 // Crea un array (longBooks) con i libri che hanno più di 300 pagine;
 const longBooks = books.filter(book => book.pages > 300);
 console.log(longBooks);
@@ -54,9 +59,17 @@ console.log(longBooks);
 // Creare un array (longBooksTitles) che contiene solo i titoli dei libri contenuti in longBooks.
 const longBooksTitles = longBooks.map(title => title.title);
 console.log(longBooksTitles);
+
 // Stampa in console ogni titolo nella console.
 books.forEach(book => console.log(book.title))
 
 
 
+
+
+
+// Snack 2 - Il primo libro scontato
+// Creare un array (availableBooks) che contiene tutti i libri disponibili.
+// Crea un array (discountedBooks) con gli availableBooks, ciascuno con il prezzo scontato del 20% (mantieni lo stesso formato e arrotonda al centesimo)
+// Salva in una variabile (fullPricedBook) il primo elemento di discountedBooks che ha un prezzo intero (senza centesimi).
 
